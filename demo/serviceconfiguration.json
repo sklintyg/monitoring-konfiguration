@@ -1,0 +1,30 @@
+{
+  "services": [
+    {
+      "serviceName":"webcert",
+      "configurations":["dbStatus","hsaStatus","jmsStatus","intygstjanst","signatureQueueSize"],
+      "nodes": [
+        {
+          "nodeName": "nod1",
+          "nodeUrl": "http://test.webcert.intygstjanster.se/monitoring/ping-for-configuration/v1.0"
+        }
+      ]
+    },
+    {
+      "serviceName":"minaintyg",
+      "configurations":["intygstjanst"],
+      "nodes": [
+        {
+          "nodeName": "nod1",
+          "nodeUrl": "http://test.minaintyg.intygstjanster.se/monitoring/ping-for-configuration/v1.0"
+        }
+      ]
+    },
+    {
+      "serviceName":"statistik",
+      "configurations":[],
+      "nodes": [
+      ]
+    }
+  ]
+}
